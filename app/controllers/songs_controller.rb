@@ -15,6 +15,6 @@ class SongsController < ApplicationController
   def create
   end
 
-  def edit 
+  def edit
   end
 end
