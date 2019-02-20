@@ -25,4 +25,9 @@ class SongsController < ApplicationController
   def edit
     @song = Song.find(params[:id])
   end
+
+  private
+def song_params
+    params.require(:song).permit(:title, :released, :release_year, :artist_name, :genre)
+end
 end
